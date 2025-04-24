@@ -1,12 +1,33 @@
-# React + Vite
+# React + Vite: API-Daten abrufen und anzeigen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Projektbeschreibung
 
-Currently, two official plugins are available:
+Diese React-Anwendung wurde mit Vite erstellt und zeigt Daten aus einer öffentlichen API an. Die Anwendung nutzt Axios, um Daten von der [REST Countries API](https://restcountries.com/) abzurufen, und stellt diese in einer Liste dar. Zusätzlich wurde ein Suchfeld integriert, um die Daten interaktiv zu filtern.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Aufgabenbeschreibung
 
-## Expanding the ESLint configuration
+### 1. Vorbereitung
+- Ein neues React-Projekt wurde mit Vite erstellt.
+- Axios wurde für den Datenabruf installiert: `npm install axios`.
+- GitHub Copilot wurde genutzt, um den Code zu generieren und Vorschläge zu erhalten.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Funktionale Anforderungen
+- **Datenabruf über eine öffentliche API**:
+  - Die [REST Countries API](https://restcountries.com/) wurde gewählt, um Länderinformationen abzurufen.
+  - Axios wurde verwendet, um die Daten abzurufen.
+  - Die Daten werden in einem React State (`useState`) gespeichert.
+
+### 3. Anzeigen der Daten in einer Liste
+- Die Anwendung zeigt eine Liste von Ländern an, die den Ländernamen und die Hauptstadt enthält.
+- Die Daten werden dynamisch aus der API geladen und in der Benutzeroberfläche dargestellt.
+
+### 4. Einfache Interaktion
+- Ein Suchfeld wurde integriert, mit dem Nutzer:innen die Liste der Länder nach Namen filtern können.
+- Die Suchanfrage wird in einem React State (`useState`) gespeichert und die Liste wird in Echtzeit aktualisiert.
+
+## Installation und Ausführung
+
+1. **Repository klonen**:
+   ```bash
+   git clone <repository-url>
+   cd react-mit-githubcopilot
